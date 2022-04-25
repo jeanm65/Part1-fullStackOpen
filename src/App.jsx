@@ -10,6 +10,9 @@ const App = () => {
   const handleGoodFeedb = () => setGood(good + 1);
   const handleNeutralFeedb = () => setNeutral(neutral + 1);
   const handleBadFeedb = () => setBad(bad + 1);
+  const totalClicks = good + neutral + bad;
+  const averageOfClicksNumber = totalClicks / 3;
+  const positiveFeedb = (good * 100)/totalClicks;
 
   return (
     <div>
@@ -19,7 +22,10 @@ const App = () => {
       <h1>Statistics</h1>
       good {good} <br />
       neutral {neutral} <br />
-      bad {bad}
+      bad {bad} <br />
+      All {totalClicks} <br />
+      average {averageOfClicksNumber} <br />
+      positive {positiveFeedb + '%'}
     </div>
   );
 };
