@@ -1,6 +1,14 @@
 import React from 'react';
 
 const Statistics = ({text, good, neutral, bad, total, average, positiveFeed }) => {
+    if(total === 0){
+      return (
+        <div>
+          <p>No feedback given</p>
+        </div>
+      )
+    }
+  
   return (
     <div>
       <h1>{text}</h1>
