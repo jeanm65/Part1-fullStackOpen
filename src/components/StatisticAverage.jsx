@@ -2,9 +2,16 @@ import React from 'react';
 
 const StatisticAverage = ({text, average}) => {
   return (
-    <div>
-      {text} {average}
-    </div>
+    <>
+      <table>
+        <tbody>
+          <tr>
+            <td>{text}</td>
+            <td>{average}</td>
+          </tr>
+        </tbody>
+      </table>
+    </>
   );
 };
 

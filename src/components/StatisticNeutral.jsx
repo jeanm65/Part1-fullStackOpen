@@ -2,9 +2,16 @@ import React from 'react';
 
 const StatisticNeutral = ({text, neutralClick}) => {
   return (
-    <div>
-      {text} {neutralClick}
-    </div>
+    <>
+      <table>
+        <tbody>
+          <tr>
+            <td>{text}</td>
+            <td>{neutralClick}</td>
+          </tr>
+        </tbody>
+      </table>
+    </>
   );
 };
 

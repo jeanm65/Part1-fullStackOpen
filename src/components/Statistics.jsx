@@ -16,15 +16,15 @@ const Statistics = ({text, good, neutral, bad, total, average, positiveFeed }) =
     }
   
   return (
-    <div>
+    <>
       <h1>{text}</h1>
-      <StatisticGood text='good' goodClick={good} /> 
-      <StatisticNeutral text='neutral' neutralClick={neutral} /> 
-      <StatisticBad text='bad' badClick={bad}/>
-      <StatisticTotal text='total' total={total} /> 
-      <StatisticAverage text='average' average={average} /> 
-      <StatisticPositiveFeed text='positive' positiveFeed={positiveFeed} /> 
-    </div>
+        <StatisticGood text='good' goodClick={good} />
+        <StatisticNeutral text='neutral' neutralClick={neutral} />
+        <StatisticBad text='bad' badClick={bad} /> 
+        <StatisticTotal text='total' total={total} />
+        <StatisticAverage text='average' average={average} />
+        <StatisticPositiveFeed text='positive' positiveFeed={positiveFeed} />    
+    </>  
   );
 };
 

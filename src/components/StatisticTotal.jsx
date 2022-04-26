@@ -2,9 +2,16 @@ import React from "react";
 
 const StatisticTotal = ({ text, total }) => {
   return (
-    <div>
-      {text} {total}
-    </div>
+    <>
+      <table>
+        <tbody>
+          <tr>
+            <td>{text}</td>
+            <td>{total}</td>
+          </tr>
+        </tbody>
+      </table>
+    </>
   );
 };
 

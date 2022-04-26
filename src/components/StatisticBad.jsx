@@ -1,10 +1,17 @@
-import React from 'react';
+import React from "react";
 
-const StatisticBad = ({text, badClick}) => {
+const StatisticBad = ({ text, badClick }) => {
   return (
-    <div>
-       {text} {badClick}
-    </div>
+    <>
+      <table>
+        <tbody>
+          <tr>
+            <td>{text}</td>
+            <td>{badClick}</td>
+          </tr>
+        </tbody>
+      </table>
+    </>
   );
 };
 

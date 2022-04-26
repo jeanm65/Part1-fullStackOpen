@@ -1,10 +1,17 @@
-import React from 'react';
+import React from "react";
 
-const StatisticPositiveFeed = ({text, positiveFeed}) => {
+const StatisticPositiveFeed = ({ text, positiveFeed }) => {
   return (
-    <div>
-      {text} {positiveFeed + '%'}
-    </div>
+    <>
+      <table>
+        <tbody>
+          <tr>
+            <td>{text}</td>
+            <td>{positiveFeed + "%"}</td>
+          </tr>
+        </tbody>
+      </table>
+    </>
   );
 };
 

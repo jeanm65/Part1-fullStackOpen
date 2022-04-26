@@ -1,11 +1,18 @@
-import React from 'react';
+import React from "react";
 
-const StatisticLine = ({text, goodClick}) => {
+const StatisticGood = ({ text, goodClick }) => {
   return (
-    <div>
-      {text} {goodClick} <br />
-    </div>
+    <>
+      <table style={{'td': '1px solid black'}}>
+        <tbody>
+          <tr>
+            <td>{text}</td>
+            <td>{goodClick}</td>
+          </tr>
+        </tbody>
+      </table>
+    </>
   );
 };
 
-export default StatisticLine;
+export default StatisticGood;
